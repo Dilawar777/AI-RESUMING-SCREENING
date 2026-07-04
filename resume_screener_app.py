@@ -179,8 +179,8 @@ if analyze_btn:
             st.markdown('<p class="section">Resume Skills by Category</p>', unsafe_allow_html=True)
             for category, skills in resume_skills_by_cat.items():
                 if skills:
-                    st.markdown(f"**{category}:** {', '.join(skills)}")
-
+                    st.markdown(f"<p style='color:white'><b>{category}:</b> {', '.join(skills)}</p>", unsafe_allow_html=True)
+                   
 st.divider()
 st.markdown(
     '<p style="text-align:center;color:#9CA3AF;font-size:0.8rem;">'
