@@ -32,6 +32,8 @@ st.markdown("""
     .section    { font-size:1.1rem; font-weight:600; color:#1A1A2E;
                   border-bottom:2px solid #1A56A0;
                   padding-bottom:4px; margin:20px 0 12px; }
+    .stMarkdown p { color:#1A1A2E !important; }
+    .stMarkdown { color:#1A1A2E !important; }
     footer { visibility:hidden; }
 </style>
 """, unsafe_allow_html=True)
