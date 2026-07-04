@@ -87,10 +87,10 @@ st.markdown("")
 col1, col2 = st.columns(2)
 with col1:
     st.markdown('<p class="section">Upload Resume (PDF)</p>', unsafe_allow_html=True)
-    uploaded_file = st.file_uploader("", type=["pdf"], label_visibility="collapsed")
+    uploaded_file = st.file_uploader("Upload PDF", type=["pdf"], label_visibility="collapsed")
 with col2:
     st.markdown('<p class="section">Paste Job Description</p>', unsafe_allow_html=True)
-    job_desc = st.text_area("", height=250,
+   job_desc = st.text_area("Job Description", height=250,
                              placeholder="Paste the full job description here...",
                              label_visibility="collapsed")
 
