@@ -158,7 +158,8 @@ if analyze_btn:
             if missing:
                 cols = st.columns(3)
                 for i, skill in enumerate(missing):
-                    cols[i % 3].markdown(f"❌ **{skill}**")
+                    cols[i % 3].markdown(f"<span style='color:#DC2626'>❌ **{skill}**</span>", unsafe_allow_html=True)
+                   
             else:
                 st.success("Your resume contains all keywords from this job description!")
 
@@ -167,7 +168,8 @@ if analyze_btn:
             if matched:
                 cols = st.columns(3)
                 for i, skill in enumerate(matched):
-                    cols[i % 3].markdown(f"✅ **{skill}**")
+                    cols[i % 3].markdown(f"<span style='color:#059669'>✅ **{skill}**</span>", unsafe_allow_html=True)
+                    
             else:
                 st.warning("No matching skills found.")
 
