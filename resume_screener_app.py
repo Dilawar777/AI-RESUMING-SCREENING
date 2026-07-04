@@ -30,6 +30,8 @@ st.markdown("""
     .weak       { background:#FEE2E2; border-left:4px solid #DC2626;
                   padding:12px 16px; border-radius:8px; color:#1A1A2E; margin:4px 0; }
     .section    { font-size:1.1rem; font-weight:600; color:#1A1A2E;
+                 [data-testid="stMarkdownContainer"] p { color:#FFFFFF !important; }
+                 [data-testid="stMarkdownContainer"] { color:#FFFFFF !important; }
                   border-bottom:2px solid #1A56A0;
                   padding-bottom:4px; margin:20px 0 12px; }
     .stMarkdown p { color:#1A1A2E !important; }
